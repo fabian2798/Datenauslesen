@@ -1,0 +1,33 @@
+\documentclass[a4paper,12pt,xcolor=dvipsnames]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{scrlayer-scrpage}
+\usepackage[doublespacing]{setspace}
+\newcommand{\mybox}[1]{%
+    \tikz[baseline=(text.base)]
+        {\node [rounded corners,fill=cyan,draw=violet] (text) {#1};}%
+}
+\title{Systeminformationen}
+\date{\today}
+\begin{document}
+\maketitle
+\raggedright
+\mybox{Hostname:                                       LAPTOP-3485FJ1G }\\
+\mybox{Betriebssystemname:                             Microsoft Windows 10 Home }\\
+\mybox{Betriebssystemversion:                          10.0.19044 Nicht zutreffend Build 19044 }\\
+\mybox{Betriebssystemhersteller:                       Microsoft Corporation }\\
+\mybox{Typ des Betriebssystembuilds:                   Multiprocessor Free }\\
+\mybox{Registrierter Benutzer:                         fabi.fregin@web.de }\\
+\mybox{Produkt-ID:                                     00325-82201-49525-AAOEM }\\
+\mybox{Systemhersteller:                               LENOVO }\\
+\mybox{Systemmodell:                                   82H9 }\\
+\mybox{Systemtyp:                                      x64-based PC }\\
+\mybox{Prozessor(en):                                  1 Prozessor(en) installiert. }\\
+\mybox{BIOS-Version:                                   LENOVO GGCN20WW, 13.01.2021 }\\
+\mybox{Gesamter physischer Speicher:                   7.991 MB}
+\mybox{Verfuegbarer physischer Speicher:                2.444 MB}
+\end{document}
